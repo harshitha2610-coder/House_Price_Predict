@@ -146,7 +146,7 @@ streamlit run app.py
 ## 📷 Application Preview
 
 ### Home Page
-![Home Page](screenshots/Home page.jpeg)
+![Homepage](screenshots/Home page.jpeg)
 
 ### Prediction Result
 ![Prediction](screenshots/Prediction.jpeg)
