@@ -1,32 +1,36 @@
-# House_Price_Predict
-Machine Learning project for predicting house prices using Decision Tree Regression, featuring data preprocessing, EDA, model evaluation, and a Streamlit-based prediction interface.
 # 🏠 House Price Prediction System
 
 ## 📌 Project Overview
 
-The House Price Prediction System is a Machine Learning application that predicts residential house prices based on different property features. The project uses a Decision Tree Regression model trained on a housing dataset and is deployed using Streamlit for an interactive web interface.
+The House Price Prediction System is a Machine Learning application that predicts residential house prices based on various property features such as square footage, number of bedrooms, bathrooms, year built, lot size, garage size, and neighborhood quality.
+
+The project performs data preprocessing, exploratory data analysis (EDA), feature engineering, model training, model evaluation, and provides a user-friendly prediction interface using Streamlit.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Objective
 
-- Predict house prices using Machine Learning.
-- Perform Data Cleaning and Preprocessing.
-- Conduct Exploratory Data Analysis (EDA).
-- Train and evaluate regression models.
-- Deploy the trained model using Streamlit.
+To build a regression-based machine learning model that accurately predicts house prices using property attributes and provides an interactive web application for users to estimate house prices.
 
 ---
 
-## 🚀 Features
+## 📂 Dataset
 
-- Data Cleaning & Preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Decision Tree Regression Model
-- Model Performance Evaluation
-- Interactive Streamlit Web Application
-- Real-Time House Price Prediction
+**Dataset Name:** House Price Regression Dataset
+
+### Features
+
+- Square_Footage
+- Num_Bedrooms
+- Num_Bathrooms
+- Year_Built
+- Lot_Size
+- Garage_Size
+- Neighborhood_Quality
+
+**Target Variable**
+
+- House_Price
 
 ---
 
@@ -38,53 +42,97 @@ The House Price Prediction System is a Machine Learning application that predict
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Joblib
 - Streamlit
+- Joblib
 
 ---
 
-## 📂 Project Structure
+## 📊 Machine Learning Workflow
 
-```
-House_Price_Predict/
-│── app.py
-│── Regression_Model.ipynb
-│── house_price_tree_model.pkl
-│── requirements.txt
-│── README.md
-```
+1. Data Collection
+2. Data Cleaning
+3. Exploratory Data Analysis (EDA)
+4. Feature Engineering
+5. Train-Test Split
+6. Model Training
+7. Model Evaluation
+8. Save Trained Model
+9. Streamlit Deployment
 
 ---
 
-## 📊 Dataset Features
+## 🤖 Machine Learning Models
 
-- Area
-- Bedrooms
-- Bathrooms
-- Floors
+- Linear Regression
+- Decision Tree Regressor
+
+The Decision Tree Regressor was selected as the final model and saved using Joblib.
+
+---
+
+## 📈 Evaluation Metrics
+
+The model performance was evaluated using:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+---
+
+## 🚀 Streamlit Application
+
+The application allows users to enter:
+
+- Square Footage
+- Number of Bedrooms
+- Number of Bathrooms
 - Year Built
-- Location
-- Condition
-- Garage
-- Price (Target)
+- Lot Size
+- Garage Size
+- Neighborhood Quality
+
+The trained model predicts the estimated house price instantly.
 
 ---
 
-## ⚙️ Installation
+## 📁 Project Structure
 
-Clone the repository:
+```
+House_Price_Prediction/
+│
+├── app.py
+├── regressionmodel.ipynb
+├── house_price_tree_model.pkl
+├── house_price_regression_dataset.csv
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ▶️ Installation
+
+Clone the repository
 
 ```bash
-git clone https://github.com/harshitha2610-coder/House_Price_Predict.git
+git clone <repository-link>
 ```
 
-Install the required packages:
+Move into the project folder
+
+```bash
+cd House_Price_Prediction
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+Run the Streamlit application
 
 ```bash
 streamlit run app.py
@@ -92,20 +140,37 @@ streamlit run app.py
 
 ---
 
-## 📈 Machine Learning Model
+## 📷 Application Preview
 
-The project uses the **Decision Tree Regressor** from Scikit-learn to predict house prices based on the input features.
-
----
-
-## 📋 Results
-
-The trained model predicts the estimated house price based on the user inputs entered through the Streamlit interface.
+(Add screenshots of your Streamlit application here after deployment.)
 
 ---
 
-## 👩‍💻 Developed By
+## 🌐 Deployment
 
-**Harshitha L**
+The project is deployed using **Streamlit Community Cloud**.
 
-Machine Learning Internship Project
+---
+
+## 🔮 Future Enhancements
+
+- Random Forest Regression
+- XGBoost Regression
+- Live Real Estate Data Integration
+- Map-based Location Analysis
+- Cloud Database Integration
+- Mobile Application
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+
+AI & Machine Learning Internship Project
+
+---
+
+## 📜 License
+
+This project is developed for educational and internship purposes.
