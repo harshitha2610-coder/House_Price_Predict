@@ -29,6 +29,7 @@ To build a regression-based machine learning model that accurately predicts hous
 - Condition Code (0=Poor, 1=Average, 2=Good)
 - Garage Code (0=No, 1=Yes)
 
+
 **Target Variable**
 
 - House_Price
@@ -91,10 +92,9 @@ The application allows users to enter:
 - Number of Bathrooms
 - Floors
 - Year Built
-- Location Code (0=Downtown, 1=Suburban, 2=Urban)
-- Condition Code (0=Poor, 1=Average, 2=Good)
-- Garage Code (0=No, 1=Yes)
-  
+- Location Code
+- Garage Code
+- Condition Code
 
 The trained model predicts the estimated house price instantly.
 
@@ -120,7 +120,7 @@ House_Price_Prediction/
 Clone the repository
 
 ```bash
-git clone <repository-link>
+git clone <https://github.com/harshitha2610-coder/House_Price_Predict.git>
 ```
 
 Move into the project folder
@@ -145,8 +145,11 @@ streamlit run app.py
 
 ## 📷 Application Preview
 
-(Add screenshots of your Streamlit application here after deployment.)
+### Home Page
+![Home Page](screenshots/Home page.jpeg)
 
+### Prediction Result
+![Prediction](screenshots/Prediction.jpeg)
 ---
 
 ## 🌐 Deployment
@@ -168,7 +171,7 @@ The project is deployed using **Streamlit Community Cloud**.
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Harshitha L**
 
 AI & Machine Learning Internship Project
 
