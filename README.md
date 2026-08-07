@@ -20,13 +20,14 @@ To build a regression-based machine learning model that accurately predicts hous
 
 ### Features
 
-- Square_Footage
+- Area
 - Num_Bedrooms
 - Num_Bathrooms
+- Floors
 - Year_Built
-- Lot_Size
-- Garage_Size
-- Neighborhood_Quality
+- Location Code (0=Downtown, 1=Suburban, 2=Urban)
+- Condition Code (0=Poor, 1=Average, 2=Good)
+- Garage Code (0=No, 1=Yes)
 
 **Target Variable**
 
@@ -85,13 +86,15 @@ The model performance was evaluated using:
 
 The application allows users to enter:
 
-- Square Footage
+- Area
 - Number of Bedrooms
 - Number of Bathrooms
+- Floors
 - Year Built
-- Lot Size
-- Garage Size
-- Neighborhood Quality
+- Location Code (0=Downtown, 1=Suburban, 2=Urban)
+- Condition Code (0=Poor, 1=Average, 2=Good)
+- Garage Code (0=No, 1=Yes)
+  
 
 The trained model predicts the estimated house price instantly.
 
@@ -149,7 +152,7 @@ streamlit run app.py
 ## 🌐 Deployment
 
 The project is deployed using **Streamlit Community Cloud**.
-
+- https://housepricepredictionbyharshhi.streamlit.app/
 ---
 
 ## 🔮 Future Enhancements
